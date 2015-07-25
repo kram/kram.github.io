@@ -1,0 +1,21 @@
+<h1 id="control-flow">Control flow</h1>
+<h2 id="if-else">If / Else</h2>
+<p><code>if</code> and <code>else</code> are currently the only available control structures implemented in kram.</p>
+<div class="sourceCode"><pre class="sourceCode go"><code class="sourceCode go"><span class="kw">if</span> condition {
+    <span class="co">// Was true</span>
+} <span class="kw">else</span> {
+    <span class="co">// Not true</span>
+}</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode go"><code class="sourceCode go"><span class="kw">if</span> condition {
+    <span class="co">// Was true</span>
+}</code></pre></div>
+<h2 id="while">While</h2>
+<p>kram only has a simple way of looping (for now), the <code>while</code>-loop.</p>
+<h3 id="example">Example</h3>
+<div class="sourceCode"><pre class="sourceCode go"><code class="sourceCode go"><span class="co">// Prints the numbers 1 to 10</span>
+i := <span class="dv">1</span>
+
+while i &lt;= <span class="dv">10</span> {
+    IO::Println(i)
+    i := <span class="dv">1</span>
+}</code></pre></div>

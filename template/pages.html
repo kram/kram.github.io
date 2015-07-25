@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kram</title>
+
+		<!-- Hilight JS -->
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+
+		<link rel="stylesheet" href="/css/primer.css">
+
+		<style type="text/css">
+			header {
+				left: 0;
+				right: 0;
+				background: #f39c12;
+
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				margin-bottom: 1.5rem;
+			}
+
+			header img {
+				height: 50px;
+			}
+
+			#main-body > *:first-child {
+				margin-top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<img src="/images/logo-white-128.png">
+			</div>
+    	</header>
+
+		<div class="container">
+			<div class="columns">
+				<div class="one-fifth column">
+					<nav class="menu">
+						<a class="menu-item selected" href="#getting-started">Getting started</a>
+						<a class="menu-item" href="#control-flow">Control flow</a>
+						<a class="menu-item" href="#types">Types</a>
+						<a class="menu-item" href="#types-number">Number</a>
+						<a class="menu-item" href="#types-string">String</a>
+						<a class="menu-item" href="#types-bool">Bool</a>
+						<a class="menu-item" href="#types-map">Map</a>
+						<a class="menu-item" href="#types-function">Function</a>
+					</nav>
+				</div>
+				<div class="four-fifths column" id="main-body">
+					@@include('pages.html')
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

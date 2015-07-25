@@ -8,9 +8,12 @@ var wrap = require("gulp-wrap");
 var rename = require("gulp-rename");
 var clean = require('gulp-clean');
 var run = require('gulp-run');
+var concat = require('gulp-concat');
+var fileinclude = require('gulp-file-include');
+var watch = require('gulp-watch');
 
 gulp.task("clean", function() {
-	return gulp.src('public', {read: false})
+	return gulp.src(['build', 'pubilc'], {read: false})
         .pipe(clean())
 });
 
@@ -20,24 +23,40 @@ gulp.task("build-md", ["clean"], function() {
 		.pipe(rename(function (path) {
     		path.extname = ".html";
   		}))
-		.pipe(gulp.dest("public/"))
+		.pipe(gulp.dest("build/pages/"))
 });
 
-gulp.task("build-html", ["clean"], function() {
-	return gulp.src("html/*.html", {'base': 'src/'})
-		.pipe(gulp.dest("public/"))
+gulp.task("build-wrap", ['build-md'], function() {
+	return gulp.src("build/pages/*.html", {'base': 'build/pages/'})
+		// .pipe(wrap('<section><%= contents %></section>'))
+    	.pipe(gulp.dest("build/pages/"))
 });
 
-gulp.task("build-wrap", ['build-md', 'build-html'], function() {
-	return gulp.src("public/*.html", {'base': 'src/'})
-		.pipe(wrap('<section><%= contents %></section>'))
-    	.pipe(gulp.dest("public/"))
+gulp.task("combind-pages", ["build-wrap"], function() {
+	return gulp.src("build/pages/*.html", {'base': 'build/pages/'})
+		.pipe(concat("pages.html"))
+		.pipe(gulp.dest("build/"))
 });
 
-gulp.task("build", ["clean", "build-wrap"], function() {
-	return gulp.src('src/*.html')
-        .pipe(include() )
-        .pipe(gulp.dest("public"))
+gulp.task("templates", ["combind-pages"], function() {
+	gulp.src("template/*", {'base': 'template/'})
+		.pipe(fileinclude({
+			prefix: '@@',
+			basepath: 'build/'
+		}))
+		.pipe(rename("index.html"))
+		.pipe(gulp.dest('public/'))
 });
+
+gulp.task("css", function() {
+	return gulp.src(["css/*", "images/*"], {'base': './'})
+		.pipe(gulp.dest('public/'))
+});
+
+gulp.task("build", ["clean", "templates", "css"]);
 
 gulp.task("default", ["build"]);
+
+gulp.task("watch", ["build"], function() {
+	gulp.watch('**/*', ["build"]);
+});

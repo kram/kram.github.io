@@ -1,4 +1,6 @@
-# If / Else
+# Control flow
+
+## If / Else
 
 `if` and `else` are currently the only available control structures implemented in kram.
 
@@ -16,11 +18,11 @@ if condition {
 }
 ```
 
-# While
+## While
 
 kram only has a simple way of looping (for now), the `while`-loop.
 
-## Example
+### Example
 
 ```go
 // Prints the numbers 1 to 10
