@@ -1,5 +1,7 @@
 # Types / Map
 
+----
+
 A `Map` is what other languages might call a dict or hashmap/unordered map.
 
 The key must be a `String`, but the value can be of any type (even other `Map`s if you wish).

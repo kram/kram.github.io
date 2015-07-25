@@ -1,5 +1,7 @@
 # Types / Number
 
+----
+
 A `Number` is the only way to represent a number (eg, 10, 1337 or 123.456) in kram.
 
 ```go

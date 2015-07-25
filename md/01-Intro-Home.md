@@ -1,1 +1,0 @@
-# Kram - A class based scripting language

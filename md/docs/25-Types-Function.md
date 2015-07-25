@@ -1,5 +1,7 @@
 # Types / Function
 
+----
+
 `Function`s are just another Type, and can be assigned to variables like any other.
 
 ```go

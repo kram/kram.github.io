@@ -22,39 +22,42 @@
 			}
 
 			header img {
-				height: 50px;
+				height: 40px;
+			}
+
+			footer {
+				left: 0;
+				right: 0;
+				background: #f39c12;
+				padding: 1em;
+				text-align: center;
+				margin-top: 1.5rem;
+			}
+
+			#main-body {
+				font-size: 16px;
+				line-height: 1.6;
 			}
 
 			#main-body > *:first-child {
 				margin-top: 0;
+			}
+
+			.sourcecode {
+				padding: 16px;
+    			overflow: auto;
 			}
 		</style>
 	</head>
 	<body>
 		<header>
 			<div class="container">
-				<img src="/images/logo-white-128.png">
+				<a href="/">
+					<img src="/images/logo-white-128.png">
+				</a>
 			</div>
     	</header>
 
 		<div class="container">
 			<div class="columns">
-				<div class="one-fifth column">
-					<nav class="menu">
-						<a class="menu-item selected" href="#getting-started">Getting started</a>
-						<a class="menu-item" href="#control-flow">Control flow</a>
-						<a class="menu-item" href="#types">Types</a>
-						<a class="menu-item" href="#types-number">Number</a>
-						<a class="menu-item" href="#types-string">String</a>
-						<a class="menu-item" href="#types-bool">Bool</a>
-						<a class="menu-item" href="#types-map">Map</a>
-						<a class="menu-item" href="#types-function">Function</a>
-					</nav>
-				</div>
-				<div class="four-fifths column" id="main-body">
-					@@include('pages.html')
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+				

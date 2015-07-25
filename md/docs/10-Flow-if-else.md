@@ -1,5 +1,7 @@
 # Control flow
 
+----
+
 ## If / Else
 
 `if` and `else` are currently the only available control structures implemented in kram.
