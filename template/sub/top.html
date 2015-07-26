@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Kram</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content='initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport'>
+		<meta content="width=device-width" name="viewport">
 
 		<!-- Hilight JS -->
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
@@ -14,8 +15,7 @@
 
 		<style type="text/css">
 			header {
-				left: 0;
-				right: 0;
+				width: 100%;
 				background: #f39c12;
 
 				padding-top: 1rem;
@@ -28,8 +28,7 @@
 			}
 
 			footer {
-				left: 0;
-				right: 0;
+				width: 100%;
 				background: #f39c12;
 				padding: 1em;
 				text-align: center;
@@ -48,6 +47,27 @@
 			.sourcecode {
 				padding: 16px;
     			overflow: auto;
+			}
+
+			@media screen and (max-width: 1000px)  {
+				.column {
+					float: none;
+					width: 100%;
+				}
+
+				#forkme-banner {
+					display: none;
+				}
+
+				.container {
+					width: auto;
+					padding: 10px;
+				}
+
+				header {
+					padding: 0;
+					margin: 0;
+				}
 			}
 		</style>
 	</head>
