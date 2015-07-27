@@ -31,13 +31,13 @@ capitals.Set("Denmark", "Copenhagen")
 capitals.Set("Germany", "Berlin")
 ```
 
-## `Map.Get(String) Type`
+### `Map.Get(String) Type`
 
 ```go
 capitals.Get("Denmark") // Copenhagen
 ```
 
-## `Map.Has(String) Bool`
+### `Map.Has(String) Bool`
 
 ```go
 capitals.Has("Germany") // true
