@@ -6,11 +6,6 @@
 		<meta content='initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport'>
 		<meta content="width=device-width" name="viewport">
 
-		<!-- Hilight JS -->
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
-		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-		<script>hljs.initHighlightingOnLoad();</script>
-
 		<link rel="stylesheet" href="/css/primer.css">
 
 		<style type="text/css">
@@ -44,9 +39,38 @@
 				margin-top: 0;
 			}
 
-			.sourcecode {
+			pre {
 				padding: 16px;
     			overflow: auto;
+    			background-color: #272822;
+    			color: white;
+			}
+
+			/* Comments */
+			pre .co {
+				color: #75715E;
+			}
+
+			/* Strings */
+			pre .st {
+				color: #E6DB74;
+			}
+
+			/* Numbers */
+			/* Bools */
+			pre .dv,
+			pre .ot {
+				color: #AE81FF;
+			}
+
+			/* Keywords */
+			pre .kw {
+				color: #F92672;
+			}
+
+			/* Functions */
+			pre .fu {
+				color: #FD971F;
 			}
 
 			@media screen and (max-width: 1000px)  {

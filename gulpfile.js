@@ -30,7 +30,7 @@ gulp.task("clean", function() {
 
 gulp.task("build-md", ["clean"], function() {
 	return gulp.src("md/**/*.md", {'base': 'md/'})
-		.pipe(run('pandoc <%= file.path %>', {silent: true}))
+		.pipe(run('pandoc -f markdown_github -t html <%= file.path %>', {silent: true}))
 		.pipe(rename(function (path) {
     		path.extname = ".html";
   		}))
