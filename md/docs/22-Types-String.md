@@ -2,11 +2,21 @@
 
 ----
 
-`String`s are a piece of UTF-8 text, and they are defined by the usage of double quotes (`"`)
+`String`s are a piece of UTF-8 text, and they are defined by the usage of double quotes (`"`).
 
 ```go
 var hello = "World"
 ```
+
+## Escaping
+
+You can use `\` to escape the following characters
+
+* `\n` - Newline
+* `\r` - Return
+* `\t` - Tab
+* `\\` - Backslash (`\`)
+* `\"` - Double qoute (`")
 
 ## Methods
 
