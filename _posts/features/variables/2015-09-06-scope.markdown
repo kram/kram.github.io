@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "The scope of a variable"
+date:   2015-09-06 21:47:04
+categories: variables
+permalink: /:categories/:title.html
+---
+
+Variables have a very strict scope. This means that that you for example can't create a new variable witin a `if`-statement and use that variable afterwards.
+
+~~~
+if true {
+	foo := "bar"
+}
+
+IO::Println(foo) // No such variable, foo
+~~~
+
+This is solved by using the `=`-operator, like so:
+
+~~~
+foo := "bar"
+
+if true {
+	foo := "baz"
+}
+
+IO::Println(foo) // baz
+~~~
+
+## Scope changes
+
+Basically the scope is changed in most cases where curly brackets (`{` and `}`) are used.
+
+* `if`
+* `while`
+* Invocation of a `Function`

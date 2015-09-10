@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "String"
+date:   2015-09-06 21:47:04
+categories: types string
+permalink: /:categories/:title.html
+---
+
+`String`s are a piece of UTF-8 text, and they are defined by the usage of double quotes (`"`).
+
+~~~go
+var hello = "World"
+~~~
+
+## Escaping
+
+You can use `\` to escape the following characters
+
+* `\n` - Newline
+* `\r` - Return
+* `\t` - Tab
+* `\\` - Backslash (`\`)
+* `\"` - Double qoute (`")
+
+## Methods
+
+*Methods will be added when needed, see https://golang.org/pkg/strings/ for ideas.*

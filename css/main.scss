@@ -1,0 +1,108 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+header {
+	width: 100%;
+	background: #f39c12;
+
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+header img {
+	height: 40px;
+}
+
+footer {
+	width: 100%;
+	background: #f39c12;
+	padding: 1em;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+
+#main-body {
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+#main-body > *:first-child {
+	margin-top: 0;
+}
+
+code {
+	padding: 0.2em;
+	font-size: 85%;
+	background-color: #E6E6E6;
+	font-weight: bold;
+}
+
+pre code {
+	font-size: 100%;
+	background: transparent;;
+	padding: 0;
+	font-weight: normal;
+}
+
+pre {
+	padding: 16px;
+	overflow: auto;
+	background-color: #272822;
+	color: white;
+}
+
+/* Comments */
+pre .co {
+	color: #75715E;
+}
+
+/* Strings */
+pre .st {
+	color: #E6DB74;
+}
+
+/* Numbers */
+/* Bools */
+pre .dv,
+pre .ot {
+	color: #AE81FF;
+}
+
+/* Keywords */
+pre .kw {
+	color: #F92672;
+}
+
+/* Functions */
+pre .fu {
+	color: #FD971F;
+}
+
+p img.emoji {
+	vertical-align: middle;
+	height: 20px;
+}
+
+@media screen and (max-width: 1000px)  {
+	.column {
+		float: none;
+		width: 100%;
+	}
+
+	#forkme-banner {
+		display: none;
+	}
+
+	.container {
+		width: auto;
+		padding: 10px;
+	}
+
+	header {
+		padding: 0;
+		margin: 0;
+	}
+}

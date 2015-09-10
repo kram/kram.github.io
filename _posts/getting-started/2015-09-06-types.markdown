@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Types and values"
+date:   2015-09-06 21:47:04
+categories: getting-started
+permalink: /:categories/:title.html
+weight: 30
+---
+
+All values in kram are deriving from the default `Class`-object. These are the default *builtin* values in kram that all other types (aka Methods/Classes/Libraries) derive from.

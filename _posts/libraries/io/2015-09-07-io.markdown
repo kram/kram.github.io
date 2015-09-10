@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "IO"
+date:   2015-09-06 21:47:04
+categories: std
+permalink: /:categories/:title.html
+---
+
+The `IO` library is the main way for Kram-programs to communicate with the outside world.
+
+A simple example is
+
+~~~go
+IO::Println("Hello World")
+~~~
+
+that prints `Hello World` to the screen.
+
+## Methods
+
+### `IO::Print(Type ... )`
+
+Prints each parameter one by one to the screen as they are.
+
+### `IO::Println(Type ... )`
+
+Prints each parameter one by one to the screen followed by a newline.
+
+### `IO::Debug(Type ... )`
+
+Prints each parameter as well as information about the type.
+
+Eg:
+
+~~~go
+IO::Debug("Foo") // STRING<FOO>
+IO::Debug(123) // NUMBER<123>
+~~~

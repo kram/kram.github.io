@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Bool"
+date:   2015-09-06 21:47:04
+categories: types bool
+permalink: /:categories/:title.html
+---
+
+`Bool` can only have two states, `true` or `false`. 
+
+~~~go
+var success = true
+var fail = false
+~~~

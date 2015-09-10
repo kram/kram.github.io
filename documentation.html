@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<h1>Documentation</h1>
+
+<h2>Getting started</h2>
+
+{% for post in site.categories.getting-started %}
+ 	<li>
+		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	</li>
+{% endfor %}
+
+<h2>Types</h2>
+
+{% for post in site.categories.types %}
+	<li>
+		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	</li>
+{% endfor %}
+
+
+<h2>STD</h2>
+
+{% for post in site.categories.std %}
+	<li>
+		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	</li>
+{% endfor %}
