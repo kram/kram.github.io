@@ -6,7 +6,7 @@ layout: default
 
 <h2>Getting started</h2>
 
-{% for post in site.categories.getting-started %}
+{% for post in site.categories.getting-started reversed %}
  	<li>
 		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	</li>
@@ -14,16 +14,16 @@ layout: default
 
 <h2>Types</h2>
 
-{% for post in site.categories.types %}
+{% for post in site.categories.types reversed %}
 	<li>
 		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	</li>
 {% endfor %}
 
 
-<h2>STD</h2>
+<h2>Standard Libraries</h2>
 
-{% for post in site.categories.std %}
+{% for post in site.categories.std reversed %}
 	<li>
 		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	</li>

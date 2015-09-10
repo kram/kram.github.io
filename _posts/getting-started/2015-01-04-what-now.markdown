@@ -1,0 +1,10 @@
+---
+layout:     post
+title:      "What now?"
+categories: getting-started
+permalink:  /:categories/:title.html
+---
+
+The whole documentation is available [here](/documentation.html), pick a topic and dig deep into kram!
+
+If you have any questions, [GitHub](https://github.com/kram/kram/issues/new) is a great place to ask them. :)

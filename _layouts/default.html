@@ -33,7 +33,7 @@
 						{% endif %}
 
 						<nav class="menu">
-							{% for post in site.categories[$category] | sort:"weight" %}
+							{% for post in site.categories[$category] reversed %}
 								<a class="menu-item {% if post.url == page.url %}selected{% endif %}" href="{{ post.url }}">{{ post.title }}</a>
 							{% endfor %}
 						</nav>

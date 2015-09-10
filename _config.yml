@@ -2,11 +2,15 @@
 title: Kram
 email: kram@gustav.tv
 description: "A class based programming language"
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: ""
 url: "http://kramlang.org" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 pretty_categories:
     getting-started: "Getting Started"

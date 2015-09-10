@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      "Getting started"
-date:       2015-09-06 21:47:04
 categories: getting-started
 permalink:  /:categories/:title.html
 ---

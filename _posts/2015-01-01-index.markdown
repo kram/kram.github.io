@@ -1,13 +1,12 @@
 ---
 layout: post
 title:  "Kram, a class based programming language"
-date:   2015-09-06 21:47:04
 permalink: /index.html
 ---
 
 ## Example
 
-~~~go
+``` go
 IO::Println("Hello World!")
 
 age := 100
@@ -21,7 +20,7 @@ get_three := fn() {
 }
 
 IO::Println(get_three()) // Prints 3
-~~~
+```
 
 ## A few more things...
 
@@ -33,7 +32,7 @@ str := "Hi, there!"
 
 ### If-cases
 
-~~~go
+~~~ go
 if first > second {
     IO::Println("first is bigger than second")
 } else {

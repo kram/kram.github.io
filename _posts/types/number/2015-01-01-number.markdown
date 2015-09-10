@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Number"
-date:   2015-09-06 21:47:04
 categories: types number
 permalink: /:categories/:title.html
 ---

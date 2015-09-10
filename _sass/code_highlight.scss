@@ -1,0 +1,48 @@
+code {
+	padding: 0.2em;
+	font-size: 85%;
+	background-color: #E6E6E6;
+	font-weight: bold;
+}
+
+pre code {
+	font-size: 100%;
+	background: transparent;;
+	padding: 0;
+	font-weight: normal;
+}
+
+pre {
+	padding: 16px;
+	overflow: auto;
+	background-color: #272822;
+	color: white;
+}
+
+.highlight {
+
+	/* Strings */
+	.s {
+		color: #E6DB74;
+	}
+
+	/* Keywords */
+	.k {
+		color: #F92672;
+	}
+
+	/* Numbers */
+	.m {
+		color: #AE81FF;
+	}
+
+	/* Comments */
+	.c {
+		color: #75715E;
+	}
+
+	/* Names */
+	.n {
+		color: #FD971F;
+	}
+}
