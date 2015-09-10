@@ -16,19 +16,25 @@
 		<div class="container">
 			<div class="columns">
 				<div class="one-fifth column">
+
 					<nav class="menu">
-						<a class="menu-item selected" href="/">Kram</a>
-						<a class="menu-item" href="/getting-started/getting-started.html">Getting started</a>
-						<a class="menu-item" href="/documentation.html">Documentation</a>
+						<a class="menu-item {% if page.url == "/index.html" %}selected{% endif %}" href="/">Kram</a>
+						<a class="menu-item {% if page.url == "/getting-started/getting-started.html" %}selected{% endif %}" href="/getting-started/getting-started.html">Getting started</a>
+						<a class="menu-item {% if page.url == "/documentation.html" %}selected{% endif %}" href="/documentation.html">Documentation</a>
 						<a class="menu-item" href="https://github.com/kram/kram">GitHub</a>
 					</nav>
 
 					{% for category in page.categories %}
-						<nav class="menu">
-							<a class="menu-item selected" href="#">{{ category }}</a>
 
+						{% if site.pretty_categories[$category] %}
+							<h3>{{ site.pretty_categories[$category] }}</h3>
+						{% else %}
+							<h3>{{ category | capitalize }}</h3>
+						{% endif %}
+
+						<nav class="menu">
 							{% for post in site.categories[$category] | sort:"weight" %}
-								<a class="menu-item" href="{{ post.url }}">{{ post.title }}</a>
+								<a class="menu-item {% if post.url == page.url %}selected{% endif %}" href="{{ post.url }}">{{ post.title }}</a>
 							{% endfor %}
 						</nav>
 					{% endfor %}

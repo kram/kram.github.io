@@ -1,10 +1,9 @@
 ---
-layout: post
-title:  "Control flow"
-date:   2015-09-06 21:47:04
+layout:     post
+title:      "Control flow"
+date:       2015-09-06 21:47:04
 categories: getting-started
-permalink: /:categories/:title.html
-weight: 20
+permalink:  /:categories/:title.html
 ---
 
 ## If / Else

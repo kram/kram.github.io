@@ -1,10 +1,9 @@
 ---
-layout: post
-title:  "Getting started"
-date:   2015-09-06 21:47:04
+layout:     post
+title:      "Getting started"
+date:       2015-09-06 21:47:04
 categories: getting-started
-permalink: /:categories/:title.html
-weight: 10
+permalink:  /:categories/:title.html
 ---
 
 Getting started is as easy as 1-2-3!
