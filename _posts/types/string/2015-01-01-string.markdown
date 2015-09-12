@@ -23,4 +23,43 @@ You can use `\` to escape the following characters
 
 ## Methods
 
-*Methods will be added when needed, see https://golang.org/pkg/strings/ for ideas.*
+### `String.Length() Number`
+
+Returns the amount of characters that the string consists of.
+
+Example:
+
+~~~go
+IO::Println("Hello".Length()) // 5
+IO::Println("Hello, World".Length()) // 12
+IO::Println("Hello, 🌍".Length()) // 8
+IO::Println("😘".Length()) // 1
+~~~
+
+### `String.Bytes() Number`
+
+Returns how many bytes the string occupies.
+
+Example:
+
+~~~go
+IO::Println("Hello".Bytes()) // 5
+IO::Println("Hello, World".Bytes()) // 12
+IO::Println("Hello, 🌍".Bytes()) // 11
+IO::Println("😘".Bytes()) // 4
+~~~
+
+### `String.At(Number) String`
+
+Returns the character at that position. The positions are 0-indexed.
+
+This method takes Unicode-characters into consideration, so each "glyph" is one item.
+
+Example:
+
+~~~go
+IO::Println("abc".At(0)) // a
+IO::Println("abc".At(1)) // b
+IO::Println("I💖U".At(1)) // 💖
+~~~
+
