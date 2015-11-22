@@ -43,3 +43,16 @@ multiPrint := fn(first, second, third) {
 
 myPrint("One", "Two", "Three!")
 ~~~
+
+### Default values
+
+A function can have default values, like so:
+
+~~~go
+foo := fn(name, age = "30") {
+	IO::Println(name, " is ", age, " years old")
+}
+
+foo("Anna") // Anna is 30 years old
+foo("Berit", 25) // Berit is 25 years old
+~~~
