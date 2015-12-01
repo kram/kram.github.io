@@ -3,27 +3,17 @@
 
 	{% include head.html %}
 
-	<body>
+	<body data-url="{{ page.url }}">
 
-		<header>
-			<div class="container">
-				<a href="/">
-					<img src="/assets/general/logo-white-128.png">
-				</a>
-			</div>
-		</header>
+		{% include navbar.html %}
 
 		<div class="container">
-			<div class="columns">
-				<div class="one-fifth column">
+			<div class="row">
+				<div class="col-sm-8">
+					{{ content }}
+				</div>
 
-					<nav class="menu">
-						<a class="menu-item {% if page.url == "/index.html" %}selected{% endif %}" href="/">Kram</a>
-						<a class="menu-item {% if page.url == "/getting-started/getting-started.html" %}selected{% endif %}" href="/getting-started/getting-started.html">Getting started</a>
-						<a class="menu-item {% if page.url == "/documentation.html" %}selected{% endif %}" href="/documentation.html">Documentation</a>
-						<a class="menu-item" href="https://github.com/kram/kram">GitHub</a>
-					</nav>
-
+				<div class="col-sm-3">
 					{% for category in page.categories %}
 
 						{% if site.pretty_categories[$category] %}
@@ -32,19 +22,15 @@
 							<h3>{{ category | capitalize }}</h3>
 						{% endif %}
 
-						<nav class="menu">
+						<div class="list-group">
 							{% for post in site.categories[$category] reversed %}
-								<a class="menu-item {% if post.url == page.url %}selected{% endif %}" href="{{ post.url }}">{{ post.title }}</a>
+								<a href="{{ post.url }}" class="list-group-item {% if post.url == page.url %}active{% endif %}">{{ post.title }}</a>
 							{% endfor %}
-						</nav>
+						</div>
+
 					{% endfor %}
 				</div>
-
-				<div class="four-fifths column" id="main-body">
-					{{ content }}
-				</div>
 			</div>
-
 		</div>
 
 		{% include footer.html %}

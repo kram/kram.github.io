@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  "Kram, a class based programming language"
+layout: index
+title:  "Kram is a class-y programming language"
 permalink: /index.html
 ---
 
-## Example
+## A short example
 
 ``` go
 IO::Println("Hello World!")
@@ -15,34 +15,15 @@ if age > 90 {
     IO::Println("You're old! :)")
 }
 
+// Functions are first-class citizens
 get_three := fn() {
-    1 + 2 * 3 - 16.Sqrt()
+    return 3
 }
 
-IO::Println(get_three()) // Prints 3
+IO::Println(get_three())
 ```
 
-## A few more things...
-
-### Variables
-
-~~~go
-str := "Hi, there!"
-~~~
-
-### If-cases
-
-~~~ go
-if first > second {
-    IO::Println("first is bigger than second")
-} else {
-    IO::Println("first is tiny!")
-}
-~~~
-
-### Everything is a class
-
-In kram, everything is a class, that means that you can do stuff like
+In Kram, everything is a class, that means that you can do stuff like
 
 ~~~go
 150.Sqrt()
