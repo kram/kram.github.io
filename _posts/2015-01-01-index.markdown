@@ -34,3 +34,5 @@ In Kram, everything is a class, that means that you can do stuff like
 There is a lot of [stuff](https://github.com/kram/kram/labels/Feature) that needs to be implemented before kram is complete. And **you** are very welcome to help! <img src="/assets/general/emoji/ok_hand.png" alt=":ok_hand:" class="emoji" />
 
 An idea of what the language might look like in the future is available at [idea.kr](https://github.com/kram/kram/blob/master/idea.kr).
+
+Fniss.
