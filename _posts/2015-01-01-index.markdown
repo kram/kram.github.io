@@ -6,7 +6,7 @@ permalink: /index.html
 
 ## A short example
 
-``` go
+{% highlight go %}
 IO::Println("Hello World!")
 
 age := 100
@@ -21,7 +21,7 @@ get_three := fn() {
 }
 
 IO::Println(get_three())
-```
+{% endhighlight %}
 
 In Kram, everything is a class, that means that you can do stuff like
 
