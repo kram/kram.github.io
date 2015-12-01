@@ -27,22 +27,27 @@ pre {
 	}
 
 	/* Keywords */
-	.k {
+	.k, .kd {
 		color: #F92672;
 	}
 
 	/* Numbers */
-	.m {
+	.mi, .mf {
 		color: #AE81FF;
 	}
 
 	/* Comments */
-	.c {
+	.c1 {
 		color: #75715E;
 	}
 
 	/* Names */
-	.n {
+	.nx {
 		color: #FD971F;
+	}
+
+	/* bool */
+	.kc {
+		color: #F92672;
 	}
 }

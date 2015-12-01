@@ -11,14 +11,14 @@ The most common way is by the use of `:=` which creates a new variable and sets 
 
 ## Examples
 
-~~~go
+{% highlight go %}
 // foo is initialized with the value "bar" of type String
 foo := "bar"
 
 IO::Println(foo) // "bar"
-~~~
+{% endhighlight %}
 
-~~~
+{% highlight go %}
 // foo is initialized with the default value of the String-type
 // which is an empty string ("")
 foo : String
@@ -29,25 +29,25 @@ IO::Println(foo) // ""
 foo = "bar"
 
 IO::Println(foo) // "bar"
-~~~
+{% endhighlight %}
 
 ## Creation
 
 A variable can only be created once within the same scope, creating it again is an error and the program will exit.
 
-~~~go
+{% highlight go %}
 // Invalid
 foo := "bar"
 foo := "baz"
-~~~
+{% endhighlight %}
 
 Instead, if you need to update a variable, use the `=`-operator.
 
-~~~go
+{% highlight go %}
 // Valid
 foo := "bar"
 foo = "baz"
-~~~
+{% endhighlight %}
 
 ## Type
 
@@ -55,7 +55,7 @@ As seen above, the type can eiter be explicetly set with the `var : Type`-syntax
 
 This means that `var := "foo"` will set `var` to the type of `String`. The type of a variable can never change, and thus code such as the following is illegal.
 
-~~~go
+{% highlight go %}
 foo := "bar"
 foo = 1234 // Can not set variable of type String to Number
-~~~
+{% endhighlight %}

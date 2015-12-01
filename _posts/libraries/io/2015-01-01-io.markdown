@@ -9,9 +9,9 @@ The `IO` library is the main way for Kram-programs to communicate with the outsi
 
 A simple example is
 
-~~~go
+{% highlight go %}
 IO::Println("Hello World")
-~~~
+{% endhighlight %}
 
 that prints `Hello World` to the screen.
 
@@ -31,7 +31,7 @@ Prints each parameter as well as information about the type.
 
 Eg:
 
-~~~go
+{% highlight go %}
 IO::Debug("Foo") // STRING<FOO>
 IO::Debug(123) // NUMBER<123>
-~~~
+{% endhighlight %}

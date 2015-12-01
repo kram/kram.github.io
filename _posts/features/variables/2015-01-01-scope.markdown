@@ -7,25 +7,25 @@ permalink: /:categories/:title.html
 
 Variables have a very strict scope. This means that that you for example can't create a new variable witin a `if`-statement and use that variable afterwards.
 
-~~~
+{% highlight go %}
 if true {
 	foo := "bar"
 }
 
 IO::Println(foo) // No such variable, foo
-~~~
+{% endhighlight %}
 
 This is solved by using the `=`-operator, like so:
 
-~~~
+{% highlight go %}
 foo := "bar"
 
 if true {
-	foo := "baz"
+	foo = "baz"
 }
 
 IO::Println(foo) // baz
-~~~
+{% endhighlight %}
 
 ## Scope changes
 

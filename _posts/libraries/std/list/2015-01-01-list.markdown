@@ -9,7 +9,7 @@ A `List` is a list/selection of 0 or more values.
 
 The values can be of any type, even other Lists if you so wish.
 
-~~~go
+{% highlight go %}
 // Initialize a new List
 counting := []
 
@@ -18,31 +18,31 @@ counting.Push("first")
 
 // Or multiple at once
 counting.Push("second", "third", "fourth", "fifth")
-~~~
+{% endhighlight %}
 
 A list can also be initialized with a list of values
 
-~~~go
+{% highlight go %}
 counting := ["first", "second", "third"]
-~~~
+{% endhighlight %}
 
 `List` is just a class as any other, and can be initialized with `new` keyword if you want to.
 
-~~~go
+{% highlight go %}
 counting := new List()
-~~~
+{% endhighlight %}
 
 ## Ranges
 
 A range is syntatic sugar for initializing a list. This is done with the `..` (exclusive) and `...` (inclusive) operators.
 
-~~~go
+{% highlight go %}
 // Creates the list [1, 2, 3, 4, 5]
 numbers := 1...5
 
 // [1, 2, 3, 4]
 fewer_numbers := 1..5
-~~~
+{% endhighlight %}
 
 Ranges only works when both the start and end value are `Number`s.
 
@@ -52,36 +52,36 @@ Ranges only works when both the start and end value are `Number`s.
 
 Add items to the end of the list
 
-~~~go
+{% highlight go %}
 list.Push("first")
 list.Push("second", "third", "fourth", "fifth")
-~~~
+{% endhighlight %}
 
 ### `List.Pop() Type`
 
 Remove items form the end of the list, and return that value.
 
-~~~go
+{% highlight go %}
 list.Pop() // "fifth"
-~~~
+{% endhighlight %}
 
 Note: If the list is empty, an exception will be thrown.
 
 ### `Map.At(Number) Value`
 
-~~~go
+{% highlight go %}
 // Short syntax
 list[2] // "third"
 
 // Or the method
 list.At(2) // "third"
-~~~
+{% endhighlight %}
 
 Note: If there is no item at that position an exception will be thrown.
 
 ### `Map.Size() Value`
 
-~~~go
+{% highlight go %}
 list := new List()
 list.Size() // 0
 
@@ -93,4 +93,4 @@ list.Size() // 3
 list.Pop()
 
 list.Size() // 2
-~~~
+{% endhighlight %}

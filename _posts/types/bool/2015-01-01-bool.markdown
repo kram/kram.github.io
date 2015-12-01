@@ -7,7 +7,7 @@ permalink: /:categories/:title.html
 
 `Bool` can only have two states, `true` or `false`. 
 
-~~~go
+{% highlight go %}
 var success = true
 var fail = false
-~~~
+{% endhighlight %}

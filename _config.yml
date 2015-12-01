@@ -5,12 +5,10 @@ description: "A class based programming language"
 baseurl: ""
 url: "http://kramlang.org" # the base hostname & protocol for your site
 
-# Build settings
-markdown: kramdown
+highlighter: pygments
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+syntax-highlighting:
+  enabled : true
 
 pretty_categories:
     getting-started: "Getting Started"

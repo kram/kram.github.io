@@ -7,10 +7,9 @@ permalink: /:categories/:title.html
 
 `String`s are a piece of UTF-8 text, and they are defined by the usage of double quotes (`"`).
 
-~~~go
+{% highlight go %}
 var hello = "World"
-~~~
-
+{% endhighlight %}
 ## Escaping
 
 You can use `\` to escape the following characters
@@ -29,26 +28,24 @@ Returns the amount of characters that the string consists of.
 
 Example:
 
-~~~go
+{% highlight go %}
 IO::Println("Hello".Length()) // 5
 IO::Println("Hello, World".Length()) // 12
 IO::Println("Hello, 🌍".Length()) // 8
 IO::Println("😘".Length()) // 1
-~~~
-
+{% endhighlight %}
 ### `String.Bytes() Number`
 
 Returns how many bytes the string occupies.
 
 Example:
 
-~~~go
+{% highlight go %}
 IO::Println("Hello".Bytes()) // 5
 IO::Println("Hello, World".Bytes()) // 12
 IO::Println("Hello, 🌍".Bytes()) // 11
 IO::Println("😘".Bytes()) // 4
-~~~
-
+{% endhighlight %}
 ### `String.At(Number) String`
 
 Returns the character at that position. The positions are 0-indexed.
@@ -57,9 +54,8 @@ This method takes Unicode-characters into consideration, so each "glyph" is one 
 
 Example:
 
-~~~go
+{% highlight go %}
 IO::Println("abc".At(0)) // a
 IO::Println("abc".At(1)) // b
 IO::Println("I💖U".At(1)) // 💖
-~~~
-
+{% endhighlight %}

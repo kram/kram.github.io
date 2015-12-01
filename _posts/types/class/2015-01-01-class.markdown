@@ -7,14 +7,14 @@ permalink: /:categories/:title.html
 
 In addition to the already built in types, such as `Map` and `Function`, you can also define your own types. This is done with the `class`-keyword.
 
-~~~go
+{% highlight go %}
 // Create a new class called "Wizard"
 class Wizard {}
-~~~
+{% endhighlight %}
 
 ## Class properties
 
-~~~go
+{% highlight go %}
 class Wizard {
 	
 	// Create the property "name" of type "String"
@@ -31,13 +31,13 @@ class Wizard {
 		IO::Println("My name is ", self.name)
 	}
 }
-~~~
+{% endhighlight %}
 
 ## Instance of a class
 
 To be able to use the class as a value, you need to create a class-instance with the keyword `new`.
 
-~~~go
+{% highlight go %}
 // A new "Wizard" is created and assigned to "ron"
 ron := new Wizard()
 	
@@ -46,19 +46,19 @@ ron.name := "Ron"
 
 // A call to the method
 ron.talk()
-~~~
+{% endhighlight %}
 
 This code together with the class definition above will print
 
-~~~
+{% highlight go %}
 My name is Ron
-~~~
+{% endhighlight %}
 
 ## Multiple instances
 
 You can have multiple instances of the same class if you want, and each class will get it's own copy of all methods and values
 
-~~~go
+{% highlight go %}
 ron := new Wizard()
 harry := new Wizard()
 
@@ -67,11 +67,10 @@ harry.name := "Harry"
 
 ron.talk()
 harry.talk()
-~~~
-
+{% endhighlight %}
 The result would be:
 
-~~~
+{% highlight go %}
 My name is Ron
 My name is Harry
-~~~
+{% endhighlight %}

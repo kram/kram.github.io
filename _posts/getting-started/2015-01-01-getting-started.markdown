@@ -13,10 +13,10 @@ Getting started is as easy as 1-2-3!
 
 The only requirement is that you have a compiler that supports C++11 (g++/gcc 4.8 and higher). Then the following two commands should do everything you need!
 
-~~~bash
+{% highlight bash %}
 $ git clone git@github.com:kram/kram.git
 $ make
-~~~
+{% endhighlight %}
 
 ## Executing
 
@@ -26,9 +26,9 @@ When you have your kram binary ready you're ready to rock, just execute `kram /p
 
 One of the main goals of kram is to have an *extremely* low point of entry, a Hello World is as simple as
 
-~~~go
+{% highlight go %}
 IO::Println("Hello World!")
-~~~
+{% endhighlight %}
 
 You're a kram programmer now! If you have any questions, have found any bugs or want to contribute to the project and of the following methods are great!
 
