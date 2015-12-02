@@ -1,7 +1,7 @@
 # Site settings
 title: Kram
 email: kram@gustav.tv
-description: "A class based programming language"
+description: "A class-y programming language"
 baseurl: ""
 url: "http://kramlang.org" # the base hostname & protocol for your site
 
