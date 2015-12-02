@@ -2,7 +2,6 @@
 layout: post
 title:  "Class"
 categories: types class
-permalink: /:categories/:title.html
 ---
 
 In addition to the already built in types, such as `Map` and `Function`, you can also define your own types. This is done with the `class`-keyword.

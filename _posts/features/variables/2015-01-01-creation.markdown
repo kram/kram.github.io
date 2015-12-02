@@ -2,7 +2,6 @@
 layout: post
 title:  "Create and update variables"
 categories: variables
-permalink: /:categories/:title.html
 ---
 
 There is two ways to create variables, `:=` and `:`.

@@ -2,7 +2,6 @@
 layout: post
 title:  "Function"
 categories: types function
-permalink: /:categories/:title.html
 ---
 
 `Function`s are just another Type, and can be assigned to variables like any other.

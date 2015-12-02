@@ -2,7 +2,6 @@
 layout:     post
 title:      "Getting started"
 categories: getting-started
-permalink:  /:categories/:title.html
 ---
 
 Getting started is as easy as 1-2-3!

@@ -2,7 +2,6 @@
 layout: post
 title:  "The scope of a variable"
 categories: variables
-permalink: /:categories/:title.html
 ---
 
 Variables have a very strict scope. This means that that you for example can't create a new variable witin a `if`-statement and use that variable afterwards.

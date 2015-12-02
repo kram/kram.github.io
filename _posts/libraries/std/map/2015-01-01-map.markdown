@@ -2,7 +2,6 @@
 layout: post
 title:  "Map"
 categories: std std-map
-permalink: /:categories/:title.html
 ---
 
 A `Map` is what other languages might call a dict or hashmap/unordered map.

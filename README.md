@@ -1,17 +1,16 @@
 ## Requirements
 
 ```bash
-apt-get install ruby-dev build-essential
-gem install jekyll
-gem install kramdown rouge
+gem install bundler
+bundle install
 ```
 
 ## Bulding
 
 ```bash
 # Build once
-jekyll build
+bundle exec jekyll build
 
 # With built in webserver
-jekyll serve
+bundle exec jekyll serve
 ```

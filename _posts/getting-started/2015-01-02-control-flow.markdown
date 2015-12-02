@@ -2,7 +2,6 @@
 layout:     post
 title:      "Control flow"
 categories: getting-started
-permalink:  /:categories/:title.html
 ---
 
 ## If / Else

@@ -2,7 +2,6 @@
 layout: post
 title:  "Bool"
 categories: types bool
-permalink: /:categories/:title.html
 ---
 
 `Bool` can only have two states, `true` or `false`. 

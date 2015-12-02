@@ -2,7 +2,6 @@
 layout: post
 title:  "IO"
 categories: std
-permalink: /:categories/:title.html
 ---
 
 The `IO` library is the main way for Kram-programs to communicate with the outside world.

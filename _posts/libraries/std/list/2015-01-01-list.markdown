@@ -2,7 +2,6 @@
 layout: post
 title:  "List"
 categories: std std-list
-permalink: /:categories/:title.html
 ---
 
 A `List` is a list/selection of 0 or more values.
