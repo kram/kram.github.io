@@ -13,6 +13,14 @@ permalink: /docs/
 	</li>
 {% endfor %}
 
+<h2>Features</h2>
+
+{% for post in site.categories.features reversed %}
+ 	<li>
+		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	</li>
+{% endfor %}
+
 <h2>Types</h2>
 
 {% for post in site.categories.types reversed %}
